@@ -34,7 +34,7 @@ RUN set -xe \
     && docker-php-ext-install memcached
 
 RUN set -xe \
-    && docker-php-ext-install mcrypt pdo_mysql soap intl zip opcache pdo \
+    && docker-php-ext-install mcrypt pdo_mysql soap intl zip opcache \
     && docker-php-ext-install mysqli
 
 RUN set -xe \ 
