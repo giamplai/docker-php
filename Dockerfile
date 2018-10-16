@@ -1,4 +1,5 @@
 FROM php:7.1-fpm-alpine
+MAINTAINER Giampiero Lai <giampiero.lai@gmail.com>
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
 
@@ -43,3 +44,6 @@ COPY php.ini /usr/local/etc/php/php.ini
 
 # Enable XDEBUG with a custom config
 COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug-dev.ini
+
+EXPOSE 9000
+EXPOSE 9009
